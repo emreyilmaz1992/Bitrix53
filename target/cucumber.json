@@ -1,0 +1,76 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-31T21:48:32.034Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12178000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.bitrix.step_definitions.Hooks.setUpScenario()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Users interaction functionality",
+        "description": "",
+        "id": "users-interaction;users-interaction-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2016000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the landing page",
+            "match": {
+              "location": "com.bitrix.step_definitions.Download_StepDefinitions.userIsOnTheLandingPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12110000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User makes comment, likes and unfollows the other employee",
+            "match": {
+              "location": "com.bitrix.step_definitions.Interaction_StepDefinitions.userMakesCommentLikesAndUnfollowsTheOtherEmployee()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6760000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User likes other viewer\u0027s comment,make comments and like",
+            "match": {
+              "location": "com.bitrix.step_definitions.Interaction_StepDefinitions.userLikesOtherViewerSCommentMakeCommentsAndLike()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Interact"
+          }
+        ]
+      }
+    ],
+    "name": "Users interaction",
+    "description": "  AC#12:As a user, I should be able to interact with employees on the posts that I have access to.",
+    "id": "users-interaction",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Interact.feature",
+    "tags": []
+  }
+]
