@@ -15,6 +15,12 @@ public class Interaction_StepDefinitions extends BrowserUtils {
     @Ignore
     @Then("User makes comment, likes and unfollows the other employee")
     public void userMakesCommentLikesAndUnfollowsTheOtherEmployee() {
+        BrowserUtils.wait(2);
+       WebElement xx =  Driver.getDriver().findElement(By.xpath("//span[@class='feed-new-message-inf-text']"));
+       BrowserUtils.scrollToElement(xx);
+       BrowserUtils.wait(1);
+       xx.click();
+
     BrowserUtils.wait(2);
     BrowserUtils.scrollToElement(Driver.getDriver().findElement(By.xpath("//a[@id='bp_542']")));
     BrowserUtils.wait(2);

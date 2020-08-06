@@ -7,6 +7,10 @@ Feature: Users interaction
     Given User is on the landing page
     Then User makes comment, likes and unfollows the other employee
     Then User likes other viewer's comment,make comments and like
+    Then User hover over the viewers, clicks their name and visit their profiles
+
+  Scenario: User should be able to click on reviewers' name and visit their profiles.
+
 
 
 

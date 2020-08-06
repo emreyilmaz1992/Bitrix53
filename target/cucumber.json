@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-07-31T21:48:32.034Z",
+        "start_timestamp": "2020-08-06T01:15:13.719Z",
         "before": [
           {
             "result": {
-              "duration": 12178000000,
+              "duration": 14346000000,
               "status": "passed"
             },
             "match": {
@@ -24,7 +24,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2016000000,
+              "duration": 2015000000,
               "status": "passed"
             },
             "line": 7,
@@ -36,8 +36,9 @@
           },
           {
             "result": {
-              "duration": 12110000000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d84.0.4147.105)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027EMREs-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:46:508f:bbf2:f2c7%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.6\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /var/folders/fd/zhz3rg356b7...}, goog:chromeOptions: {debuggerAddress: localhost:49342}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 0f2d8f60ff11a339e3633a9246521cef\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\n\tat com.bitrix.step_definitions.Interaction_StepDefinitions.userMakesCommentLikesAndUnfollowsTheOtherEmployee(Interaction_StepDefinitions.java:22)\n\tat ✽.User makes comment, likes and unfollows the other employee(file:///Users/emre/IdeaProjects/Bitrix24/src/test/resources/features/Interact.feature:8)\n",
+              "duration": 13124000000,
+              "status": "failed"
             },
             "line": 8,
             "name": "User makes comment, likes and unfollows the other employee",
@@ -48,13 +49,23 @@
           },
           {
             "result": {
-              "duration": 6760000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "User likes other viewer\u0027s comment,make comments and like",
             "match": {
               "location": "com.bitrix.step_definitions.Interaction_StepDefinitions.userLikesOtherViewerSCommentMakeCommentsAndLike()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User hover over the viewers, clicks their name and visit their profiles",
+            "match": {
+              "location": "com.bitrix.step_definitions.Interaction_StepDefinitions.userHoverOverTheViewersClicksTheirNameAndVisitTheirProfiles()"
             },
             "keyword": "Then "
           }
